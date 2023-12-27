@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+
+    background-color: #f0ebd8;
+
+}
+
+#home-title{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    margin: 1em 0 2em 0;
+    
+
+}
+
+#result-title{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    margin: 1em 0 2em 0;
+}
+
+#description{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+    margin: 1em 0 2em 0;
+
+
+}
+
+h2{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu',sans-serif;
+    text-align: center;
+
+}
+
+
+#start{
+
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 28px;
+    margin: 1em;
+    color: white;
+    background-color: rgb(129, 60, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form{
+
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label{
+
+    font-family: 'Ubuntu',sans-serif;
+}
+
+form input{
+
+    height: 40px;
+    width: 100%;
+    max-width: 700px;
+    border-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form button {
+
+    width: 50%;
+    max-width: 190px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #748cab;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+
+}
+
+form button:hover{
+
+    color: azure;
+}
+
+#download{
+
+    width: 100px;
+    height: auto;
+    text-decoration: none;
+    font-size: 28px;
+    margin: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#filesContainer{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+#download img {
+
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+
+}
+
+#downloadScreenshot{
+
+
+    width: 50%;
+    max-width: 190px;
+    height: 50px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    font-family: "ubuntu",sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #748cab;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+

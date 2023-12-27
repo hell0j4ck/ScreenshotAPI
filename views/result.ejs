@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="result-title">Your Files Are Ready!</h1>
+
+    <h2>Request ID: <%= fileId %></h2>
+
+    <div id="filesContainer">
+
+        <a href="/fetchPdf?fileName=<%=fileName%>" target="_blank" id="download"><img src="images/pdf-icon.png" alt=""></a>
+        <a href="/fetchScreenShot?fileName=<%=screenShotName%>" target="_blank" id="downloadScreenshot">Screenshot</a>
+
+    </div>
+
+   
+
+
+</body>
+
+</html>

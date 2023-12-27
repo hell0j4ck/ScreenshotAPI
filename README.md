@@ -116,14 +116,16 @@ However, since most serverless application deployment platforms like Render, Fly
 
 <h3>Then run the following commands:</h3><br>
 
-<h4>sudo chwon -R [username] /ScreenshotAPI</h4><br>
-<h4>sudo chwon -R [username] /ScreenshotAPI/screenshots</h4><br>
-<h4>sudo chwon -R [username] /ScreenshotAPI/pdfs</h4><br>
+<h4>sudo chown -R [username] /ScreenshotAPI</h4><br>
+<h4>sudo chown -R [username] /ScreenshotAPI/screenshots</h4><br>
+<h4>sudo chown -R [username] /ScreenshotAPI/pdfs</h4><br>
 
 
 
 
 <b><p>NOTE: If you still get any errors related to --no-sandbox, change the browser instance in the const browser in index.js to the following:</p></b><br>
+
+<h3>Super Important Critical Step</h3>
 
 <h4>const browser = await puppeteer.launch({headless:"new", args: ['--no-sandbox', '--disable-setuid-sandbox'],});</h4><br>
 

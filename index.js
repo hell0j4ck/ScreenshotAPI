@@ -2,7 +2,9 @@ const express = require('express')
 const path = require('path');
 const axios = require('axios')
 const app = express()
-const puppeteer = require('puppeteer')
+const puppeteer = require('puppeteer-extra')
+const pluginStealth = require('puppeteer-extra-plugin-stealth') 
+const {executablePath} = require('puppeteer'); 
 const { v4: uuid } = require('uuid');
 const fs = require('fs')
 
@@ -49,6 +51,9 @@ app.get('/pdf', async (req, res) => {
     
     const { url } = req.query
     console.log(url)
+
+    // Use stealth 
+    puppeteer.use(pluginStealth()) 
 
     // Creates browser instance 
     const browser = await puppeteer.launch({headless:"new"});
@@ -137,6 +142,9 @@ app.get('/screenshot', async (req, res) => {
     
     const { url } = req.query
     console.log(url)
+
+    // Use stealth 
+    puppeteer.use(pluginStealth()) 
 
     // Creates browser instance 
     const browser = await puppeteer.launch({headless:"new"});
